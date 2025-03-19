@@ -1,0 +1,560 @@
+/*****Start Global Style *****/
+body
+{
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+:root
+{
+    --main-color:#1C1C1C;
+    --bg-main-light:#F7F7F7;
+}
+.main-color
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color);
+}
+.bg-main-light
+{
+    background-color: var(--bg-main-light);
+}
+.padding-section
+{
+    padding: 70px 0;
+}
+p
+{
+    font-weight: 400;
+}
+
+.main-tittle
+{
+    position: relative;
+}
+.main-tittle::before
+{
+    content: '';
+    width: 15%;
+    height: 20px;
+    background-image: url(../photo/dots.png);
+    background-position: center;
+    background-repeat: repeat;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*****End Global Style *****/
+
+
+
+/*****End Global Style *****/
+.myNav
+{
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0 , 0 , 0 , .523);
+    
+}
+
+.myNav .navbar-nav .nav-link 
+{
+    color: var(--main-color);
+    position: relative;
+    
+    
+    
+}
+.myNav .navbar-nav .nav-link.active
+{
+    font-weight: bold;
+}
+.myNav .nav-item a::before
+{
+    content: '';
+    width: 0;
+    height:1.5px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 8px;    
+    left: 17px;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: all 0.3s ease ;
+}
+.myNav .nav-item .active::before
+{
+    content: '';
+    width: 62%;
+    height:1.5px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 8px;
+    left: 17px ;
+    border-radius: 4px;
+    visibility: visible;
+    transition: all 0.3s ease ;
+    
+}
+.myNav .navbar-nav a:focus::before
+{
+    width: 62%;
+    visibility: visible;
+
+}
+/*****End Navbar Style *****/
+
+
+
+
+
+
+
+
+
+
+
+/*****Start Header Style *****/
+.home
+{
+    min-height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.623),rgba(0,0,0,0.623)), url(../photo/bg.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.home .home-content h1
+{
+    font-size: 50px;
+    font-weight: 800;
+    padding: 20px;
+}
+.home .home-content h2
+{
+    font-size: 60px;
+    font-weight: 200;
+
+}
+.home .home-content span
+{
+    font-size: 60px;
+    font-weight: 400;
+}
+.home .home-icon
+{
+    width: 30px;
+    height: 30px;
+    background-color: #1C1C1C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+/*****End Header Style *****/
+
+
+
+
+
+
+
+/*****Start About Style *****/
+.about .IMG
+{
+    position: relative;
+}
+.about .IMG .aboutimg::after
+{
+    content: '';
+    width: 350px;
+    height: 400px;
+    background-image: url(../photo/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+.about .IMG .aboutimg img
+{
+    z-index: 999999;
+}
+
+.about .IMG .w-90
+{
+    width: 90%;
+}
+.about p
+{
+    line-height: 1,8px;
+}
+.about .progress
+{
+    height: 30px;
+    box-shadow:0 0 2px rgba(0 , 0 , 0 , .523) inset;
+    
+}
+.about .about-content .btn-download
+{
+    color: #fff;
+    background-color: var(--main-color);
+    border:  2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 13px;
+    transition: all .5s linear;
+
+}
+.about .about-content .btn-download:hover
+{
+    background-color: #fff;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transition: unset;
+
+
+}
+.about .about-content .btn-contact
+{
+    background-color: #fff;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-size: 13px;
+    transition:all .5s linear ;
+
+}
+.about .about-content .btn-contact:hover
+{
+    background-color: var(--main-color);
+    color: #fff;
+    /* border: 2px solid #fff; */
+    transition: unset;
+}
+/*****End About Style *****/
+
+
+
+/*****Start Services Style *****/
+.services .card
+{
+    position: relative;
+}
+
+.services .card .card-icon
+{
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-main-light);
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out    ;
+    
+}
+.services .card:hover .card-icon
+{
+    color: var(--bg-main-light);
+    background-color: var(--main-color);
+}
+/*****End Services Style *****/
+
+
+
+
+/*****Star Works Style *****/
+
+.works .nandt .nav-link
+{
+    color: var(--main-color) ;
+    font-weight: bolder;
+    position: relative;
+}
+.works .nandt .nav-link.active
+{
+    background-color: transparent;
+}
+.works .nandt .nav-link.active::before
+{
+    content: '';
+    width: 70%;
+    height: 2px;
+    background-color: var(--main-color) ;
+    position: absolute;
+    top: 80%;
+    left: 15%;visibility: visible;
+}
+.works .nandt .nav-link::before
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    visibility: hidden;
+    transition: all .6s ease;
+}
+.works .nandt .nav-link:focus::before
+{
+    width: 70%;
+    visibility: visible;
+}
+.works .nandt  .picture
+{
+    position: relative;
+}
+.works .nandt .picture .works-layer
+{
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    opacity: 0;
+    transition: all .5s linear;
+    
+}
+.works .nandt .picture .works-layer .layer-contact
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.layer-contact .icons-layer .icons
+{
+    color:#fff ;
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    
+}
+.layer-contact .icons-layer .icons:hover
+{
+    color: var(--main-color);
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+}
+
+.layer-contact .icons-layer .icons i
+{
+    display: flex ;
+    justify-content: center;
+    
+}
+.works .nandt  .picture:hover .works-layer
+{
+    opacity: 1;
+}
+
+
+
+/*****End Works Style *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****Start Client Style *****/
+
+
+.client .carousel img 
+{
+    width: 100px;
+    border-radius: 50%;
+}
+.client .carousel .carousel-indicators [type="button"]
+{
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color: var(--main-color);
+}
+
+/*****End Client Style *****/
+
+
+
+
+
+
+
+
+
+
+/*****End team Style *****/
+.bg-card
+{
+    background-color: #5B5B5B;
+}
+.card
+{
+    overflow: hidden;
+}
+.card img
+{
+    transition: all .8s ease;
+}
+.team .card .card-body
+{
+    position: relative;
+}
+.team .card .card-layer
+{
+    width: 95%;
+    height: 77%;
+    background-color: rgba(255, 255,255,0.954);
+    position: absolute ;
+    top: 2%;
+    left: 2.5%;
+    opacity: 0;
+    transition: all .8s ease;
+}
+.team .card .layer-icon
+{
+    padding: 5px;
+}
+.team .card .layer-icon i
+{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    
+}
+.team .card .layer-icon i:hover
+{
+    color: var(--main-color);
+    background-color:#fff;
+    border: 1px solid var(--main-color);
+}
+.card:hover .card-layer
+{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+.card:hover img
+{
+    transform: scale(1.1);
+}
+
+ 
+
+
+/*****End team Style *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****Start Contact Style *****/
+.contact .card i
+{
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-main-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+.contact .card i:hover 
+{
+    color: var(--bg-main-light);
+    background-color: var(--main-color);
+}
+.contact form .form-btn button
+{
+    color:#fff;
+    border: 1px solid var(--bg-main-light);
+    background-color: var(--main-color);
+    transition: all .5s ease-in-out;
+}
+.contact form .form-btn button:hover
+{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color: #fff;
+}
+/*****End Contact Style *****/
+
+
+
+
+
+
+
